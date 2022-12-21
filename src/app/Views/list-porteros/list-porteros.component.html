@@ -1,0 +1,13 @@
+<div class="container">
+  <ul>
+    <li class="t-2" *ngFor="let portero of listPorteros"><br>
+
+      <button class="btn btn-primary t-2" [routerLink]="['/DetallePortero', portero.id]">{{portero.nombre}}</button>
+    </li>
+  </ul>
+</div>
+<div class="container border">
+
+</div>
+
+<button class="btn btn-primary" routerLink="/CrearPortero">Crear alumno</button>

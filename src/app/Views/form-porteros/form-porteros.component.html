@@ -1,0 +1,14 @@
+<div class="container w-25">
+  <form [formGroup]="formulario" (ngSubmit)="onSubmit()">
+
+    <input type="text" class="form-control" formControlName="nombre" placeholder="Nombre" />
+    <input type="text" class="form-control" formControlName="apellidos" placeholder="Apellidos" />
+    <input type="text" class="form-control" formControlName="telefono" placeholder="telefono">
+    <input type="text" class="form-control" formControlName="mail" placeholder="Mail de contacto">
+    <label for="mesDisponible">Mes de disponibilidad</label>
+    <input type="month" class="form-control" formControlName="mesDisponible" name="mesDisponible">
+    <button class="btn btn-dark" type="submit">Enviar</button>
+  </form>
+  <button class="btn btn-primary" routerLink="">Volver</button>
+
+</div>

@@ -1,0 +1,11 @@
+<div class="container border w-50">
+  <button class="btn btn-primary">{{portero.nombre}}</button><br>
+  <button class="btn btn-primary">{{portero.apellidos}}</button><br>
+  <button class="btn btn-primary">{{portero.telefono}}</button><br>
+  <button class="btn btn-primary">{{portero.mail}}</button><br>
+  <button class="btn btn-primary">{{portero.mesDisponible}}</button><br>
+</div>
+
+<button class="btn btn-primary" routerLink="">Volver</button><br>
+<button class="btn btn-dark" [routerLink]="['/EditarPortero', portero.id]">Editar Portero</button>
+<button class="btn btn-dark" (click)="deletePortero()">Eliminar Portero</button>
